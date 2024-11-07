@@ -68,7 +68,7 @@ const SpinWheel: React.FC<Props> = ({ names, setNames }) => {
       text.setAttribute('fill', 'white');
       text.setAttribute('font-size', '3');
       text.setAttribute('transform', `rotate(90, ${textX}, ${textY})`);
-      text.textContent = name;
+      text.textContent = `${++index}`;
       svg.appendChild(text);
     });
   }, [names]);
@@ -88,10 +88,9 @@ const SpinWheel: React.FC<Props> = ({ names, setNames }) => {
       const adjustedAngle = degree % 360;
       const sliceAngle = 360 / names.length;
       const index = Math.floor((360 - adjustedAngle) / sliceAngle);
-      //   alert(names[index]);
 
       setSelectedName(names[index]);
-      setOpen(true); // Modal'ı aç
+      setOpen(true);
 
       wheelRef.current.style.transition = 'none';
       wheelRef.current.style.transform = `rotate(${adjustedAngle}deg)`;

@@ -7,7 +7,7 @@ const Navigation = () => {
     <nav className="max-w-7xl mx-auto px-4 py-4 flex justify-center items-center">
       <Link href={'/'}>
         <h1 className="text-2xl uppercase text-white banner--text--purple cursor-pointer">
-          Lucky Wheel
+          Question Wheel
         </h1>
       </Link>
     </nav>

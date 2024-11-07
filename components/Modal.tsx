@@ -54,7 +54,7 @@ export default function Modal({
                 </div>
                 <div className="sm:flex sm:items-start">
                   <div className="mt-3 mb-6 text-center sm:ml-4 sm:mt-0 sm:text-left w-full">
-                    <p className="text-center  text-white text-3xl">
+                    <p className="text-center  text-white text-3xl sm:mt-10">
                       {selectedName}
                     </p>
                   </div>
